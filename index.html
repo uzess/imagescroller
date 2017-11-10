@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Image Scroll</title>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/style.css">
+</head>
+<body>
+	<div class="container">
+		<h2 class="text-center">Image Scroll on Hover</h2>
+		<div class="row">
+			<div class="col-sm-6 col-md-4 col-xs-12">
+				<div class="screen">
+					<img src="https://media.nngroup.com/media/editor/alertbox/eyetracking-scrolling-long.jpg">
+				</div>
+			</div><!--column-->
+
+			<div class="col-sm-6 col-md-4 col-xs-12">
+				<div class="screen" data-duration="1000">
+					<img src="https://media.nngroup.com/media/editor/alertbox/eyetracking-scrolling-long.jpg">
+				</div>
+			</div><!--column-->
+
+			<div class="col-sm-6 col-md-4 col-xs-12">
+				<div class="screen">
+					<img src="https://media.nngroup.com/media/editor/alertbox/eyetracking-scrolling-long.jpg">
+				</div>
+			</div><!--column-->
+		</div><!--row-->
+	</div><!--container-->
+
+	<footer>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+		<script src="assets/jquery-image-scroll.js"></script>
+		<script type="text/javascript">
+			$( window ).on( 'load', function(){
+				$( '.screen' ).scrollImage();
+			})
+		</script>
+	</footer>
+</body>
+</html>
